@@ -20,30 +20,37 @@
     <link rel="stylesheet" type="text/css" href="/bundle/app.css">
 </head>
 <body>
-    <div class="section">
-        <img class="react-logo" src="img/react-logo.svg"/>
-        <h1>Build Native Apps With React</h1>
-        <div class="horizontal-nav">
-            <a href="#native">
-              Native iOS
-            </a>
+    <div class="section section1">
+        <div class="half half1">
+            <img class="react-logo" src="img/react-logo.svg"/>
+        </div>
+        <div class="overlay half half2">
+            <h1>Build Native Apps With React</h1>
+            <div class="horizontal-nav">
+                <a href="#native">
+                  Native iOS
+                </a>
 
-            <a href="#touch">
-              Touch Handling
-            </a>
+                <a href="#touch">
+                  Touch Handling
+                </a>
 
-            <a href="#async">
-              Asynchronous
-            </a>
+                <a href="#async">
+                  Asynchronous
+                </a>
 
-            <a href="#flex">
-              Flex &amp; Styling
-            </a>
+                <a href="#flex">
+                  Flex &amp; Styling
+                </a>
+            </div>
         </div>
     </div>
     <div class="section section2">
         <div class="iphone-demo">
-            <img src="img/iphone-frame.svg"/>
+            <div class="img-container">
+                <img src="img/iphone-frame.svg"/>
+                <img src="img/tumblr-demo.jpg" class="beauty-image"/>
+            </div>
         </div>
         <div class="feature-description">
           <h2>Native Experience</h2>
@@ -54,7 +61,10 @@
     </div>
     <div class="section section3">
         <div class="iphone-demo">
-          <img src="img/iphone-frame.svg"/>
+            <div class="img-container">
+                <img src="img/iphone-frame.svg"/>
+                <img src="img/swype-demo.jpg" class="beauty-image"/>
+            </div>
         </div>
 
         <div class="feature-description">
@@ -66,8 +76,28 @@
           </p>
         </div>
             </div>
-    <div class="section">
+    <div class="section section4">
         <h1>Android Is Here</h1>
+        <img src="img/android-robot.svg" class="android-img" />
     </div>
+    <div id="slider-control">
+      <a href="#native" class="active">
+        <div class="dot"></div>
+      </a>
+
+      <a href="#touch">
+        <div class="dot"></div>
+      </a>
+
+      <a href="#async">
+        <div class="dot"></div>
+      </a>
+
+      <a href="#flex">
+        <div class="dot"></div>
+      </a>
+    </div>
+
+
 </body>
 </html>

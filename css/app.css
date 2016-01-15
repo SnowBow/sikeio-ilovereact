@@ -33,14 +33,13 @@ a:hover {
 }
 
 .section {
-  border: 2px solid #FFF;
-  width: 100%;
-  min-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 body, html {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .section {
@@ -48,6 +47,24 @@ body, html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.half {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.half1 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+}
+.half2 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .horizontal-nav {
@@ -65,7 +82,7 @@ body, html {
     flex-grow: 0.5;
     align-self: stretch;
     flex-basis: 0;
-    background-color: rgba(255,0,0,0.3);
+    background-color: #1F1E34;;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -76,17 +93,82 @@ body, html {
     flex-basis: 0;
     flex-grow: 0.5;
     align-self: stretch;
-    background-color: rgba(0,255,0,0.3);
+    background-color: #1F1E34;;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: flex-start;
+    /*padding-right:10%;*/
+}
+
+.feature-description p {
+    padding-right: 30px;
 }
 
 .section2,.section3{
     flex-direction: row;
 
 }
+
+.section .iphone-demo .img-container{
+    position: relative;
+
+}
+.section .iphone-demo .beauty-image {
+    position: absolute;
+    top: 90px;
+    left: 25px;
+}
+
+.section4 {
+    position: relative;
+    overflow: hidden;
+
+}
+.section4 .android-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(50%,50%) rotate(-45deg);
+}
+
+#slider-control {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    padding: 3px;
+    transform: translate(0,-50%);
+}
+
+#slider-control a {
+  padding: 3px;
+}
+
+#slider-control .dot {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+#slider-control .active .dot {
+  background-color: #fff;
+}
+
+.section1 {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section1 *{
+    position: relative;
+}
+
+.overlay {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(31,30,52,1));
+}
+
 
 /* css/app.css */
 @import "normalize.css";
