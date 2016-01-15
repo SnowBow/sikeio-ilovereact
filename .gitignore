@@ -36,4 +36,5 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+git remote change origin git@github.com:SnowBow/sikeio-ilovereact.git
 
