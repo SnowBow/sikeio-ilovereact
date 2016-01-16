@@ -60,7 +60,6 @@ body, html {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border: 1px solid red;
 }
 
 .half {
