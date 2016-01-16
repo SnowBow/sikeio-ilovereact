@@ -18,11 +18,19 @@
 
     <!-- <link rel="stylesheet" href="css/app.css"> -->
     <link rel="stylesheet" type="text/css" href="/bundle/app.css">
+
+
+    <script type="text/javascript" src="node_modules/gsap/src/uncompressed/TweenMax.js"></script>
+
+    <script type="text/javascript" src="node_modules/gsap/src/uncompressed/plugins/ScrollToPlugin.js"></script>
+
+    <script type="text/javascript" src="js/index.js"></script>
+
 </head>
 <body>
-    <div class="section section1">
+    <div class="section section1" id="intro-section">
         <div class="half half1">
-            <img class="react-logo" src="img/react-logo.svg"/>
+            <img class="react-logo" id="react-logo" src="img/react-logo.svg"/>
         </div>
         <div class="overlay half half2">
             <h1>Build Native Apps With React</h1>
@@ -45,7 +53,7 @@
             </div>
         </div>
     </div>
-    <div class="section section2">
+    <div class="section section2" id="native">
         <div class="iphone-demo">
             <div class="img-container">
                 <img src="img/iphone-frame.svg"/>
@@ -59,7 +67,7 @@
           </p>
         </div>
     </div>
-    <div class="section section3">
+    <div class="section section3" id="touch">
         <div class="iphone-demo">
             <div class="img-container">
                 <img src="img/iphone-frame.svg"/>
@@ -76,12 +84,16 @@
           </p>
         </div>
             </div>
-    <div class="section section4">
+    <div class="section section4" id="android">
         <h1>Android Is Here</h1>
-        <img src="img/android-robot.svg" class="android-img" />
+        <img src="img/android-robot.svg" class="android-img" id="android-robot"/>
     </div>
     <div id="slider-control">
-      <a href="#native" class="active">
+      <a href="#intro-section" class="active">
+        <div class="dot"></div>
+      </a>
+
+      <a href="#native">
         <div class="dot"></div>
       </a>
 
@@ -89,15 +101,9 @@
         <div class="dot"></div>
       </a>
 
-      <a href="#async">
-        <div class="dot"></div>
-      </a>
-
-      <a href="#flex">
+      <a href="#android">
         <div class="dot"></div>
       </a>
     </div>
-
-
 </body>
 </html>
